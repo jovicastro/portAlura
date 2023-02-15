@@ -81,7 +81,7 @@ main strong{
     padding: 16px;
     border: 2px solid var(--trdColor);
     border-radius: 8px;
-    width: 378px;
+    width: 70%;
     padding: 21.5px 0;
     color: var(--scndColor);
     text-decoration: none;
@@ -118,5 +118,8 @@ main strong{
     }
     .apresentacao__conteudo{
         width: auto;
+    }
+    .apresentacao__img{
+        width: 50%;
     }
 }
