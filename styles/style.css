@@ -5,9 +5,20 @@
     padding: 0;
     text-decoration: none;
 }
+
+:root{
+    --mainColor: #231942;
+    --scndColor: #e0b1cb;
+    --trdColor:  #9f86c0;
+    --hoverColor:#5e548e;
+
+    --fontDestaque: 'Krona One', sans-serif;
+    --fontConteudo: 'Montserrat', sans-serif;
+}
+
 body{
     box-sizing: border-box;
-    background-color: #000000;
+    background-color: var(--mainColor);
 }
 .cabecalho{
     padding: 2% 0% 0% 15%;
@@ -18,16 +29,16 @@ body{
     flex-direction: row;
 }
 .cabecalho__menu__link{
-    color: #22D4FD;
-    font-family: 'Montserrat', sans-serif;
+    color: var(--trdColor);
+    font-family: var(--fontDestaque);
     font-size: 24px;
     font-weight: 600;
 }
 main{
-    color: #f6f6f6;
+    color: var(--scndColor);
 }
 main strong{
-    color: #22D4FD;
+    color: var(--trdColor);
 }
 .apresentacao{
     padding: 5% 15%;
@@ -43,11 +54,11 @@ main strong{
 }
 .apresentacao__conteudo__titulo{
     font-size: 36px;
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--fontDestaque);
 }
 .apresentacao__conteudo__texto{
     font-size: 24px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fontConteudo);
 }
 .apresentacao__links{
     display: flex;
@@ -57,34 +68,34 @@ main strong{
     gap: 32px;
 }
 .apresentacao__links__subtitle{
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--fontDestaque);
     font-weight: 400;
     font-style: 24px;
 }
 .apresentacao__links__links{
     padding: 16px;
-    border: 2px solid #22D4FD;
+    border: 2px solid var(--trdColor);
     border-radius: 8px;
     width: 378px;
     padding: 21.5px 0;
-    color: #f6f6f6;
+    color: var(--scndColor);
     text-decoration: none;
     text-align: center;
     font-size: 24px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fontConteudo);
     font-weight: 600;
     display: flex;
     justify-content: center;
     gap: 16px;
 }
 .apresentacao__links__links:hover{
-    background-color: #272727;
+    background-color: var(--hoverColor);
 }
 .rodape{
-    color: #000000;
-    background-color: #22D4FD;
+    color: var(--mainColor);
+    background-color: var(--trdColor);
     padding: 24px;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fontConteudo);
     font-size: 24px;
 }
